@@ -1,0 +1,143 @@
+.todoListMain .main input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FFF;
+    width: 398px;
+}
+.todoListMain .main button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #0066FF;
+    color: #FFF;
+    border: 2px solid #0066FF;
+}
+.todoListMain .main button:hover {
+    background-color: #003399;
+    border: 2px solid #003399;
+    cursor: pointer;
+}
+.todoListMain .theList {
+    list-style: none;
+    padding-left: 0;
+    width: 250px;
+}
+.todoListMain .theList li {
+    position: relative;
+    color: #333;
+    background-color: rgba(255,255,255,.5);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: background-color .2s ease-out;
+    width: 481px;
+}
+
+.todoListMain .theList li:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+.todoListMain  li .destroy {
+     position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    font-size: 30px;
+    color: #cc9a9a;
+    transition: color 0.2s ease-out;
+}
+
+.todoListMain li .destroy:hover {
+    color: #af5b5e;
+}
+
+.todoListMain li label {
+    white-space: pre-line;
+    word-break: break-all;
+    padding: 15px 60px 15px 15px;
+    margin-left: 45px;
+    display: block;
+    line-height: 1.2;
+    transition: color 0.4s;
+}
+
+.todoListMain li .toggle {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    bottom: 0;
+    margin: auto 0;
+    border: none;
+}
+
+.todoListMain .footer{
+    color: #777;
+    padding: 10px 15px;
+    height: 20px;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+    width: 455px;
+}
+
+.footer:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+
+.todoListMain .footer .todo_count {
+    float: left;
+    text-align: left;
+    padding: 5px 0 0 0;
+}
+
+.filters {
+    margin: 0;
+    padding: 5px 45px 0 0;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+}    
+.filters li {
+    display: inline;
+}
+
+.filters li a.selected {
+    border-color: rgba(175, 47, 47, 0.2);
+}
+
+.filters li a {
+    color: inherit;
+    margin: 3px;
+    padding: 3px 7px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.clear-completed, html .clear-completed:active {
+    float: right;
+    position: relative;
+    padding: 3px;
+    color: #777;
+    font-size: 16px;
+   // line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgba(175, 47, 47, 0.2);;
+    background-color: transparent;
+    border-radius: 3px;
+    
+}
